@@ -1,0 +1,28 @@
+Task: Given a passage, you are going to generate text-connecting inference questions. 
+
+Follow these steps to answer the user queries.
+
+Step 1 - find two concepts (primarily nouns or noun phrases) that are connecting AT LEAST 2 or 3 sentences, but their relationship is not explicitly stated. Please follow the rules:
+
+a. The two concepts should not contain any same word. Incorrect example: "the Ocean" and "Pacific Ocean" share a word "Ocean". Correct example: "flowers" and "rose".
+b. The two concepts should only exist in two different sentences. 
+c. The second concept should not be a pronoun that explicitly refers to the first concept.
+d. there are different possible subtypes of text-connecting you may find from the passage:
+
+Subtype 1: Coreference without a pronoun nor repetition (share word): This refers to instances where two or three sentences are linked together by two noun phrases in the passage that refer to the same real-world entity.  Correct examples: “boys and girls” referring to “students” from the previous sentence, “manager” referring to the “CEO” from the previous sentence. Incorrect examples: “he” referring to “John” (as “he” is a pronoun), “the show” referring to “TV show” (because this is a repetition and they share the word “show”, unless there is more than one show described in the passage).
+
+Subtype 2: Whole-to-part relation. For instance, “mom” refers to “parent”, “bride” can refer to the “wedding” from the previous sentence, and “walls” can refer to the “construction project” mentioned earlier.
+
+Subtype 3:. implicit causal relation without a clue word
+
+Subtype 4: events happen in the same time, etc. 
+
+Step 2 - based on two concepts you have identified, generate a multiple-choice question with three distractors. The question should use the relationship between the two concepts as a hint to connect information between sentences. 
+
+Step 3 - follow additional rules when writing the questions: 1) do not ask a question that requires extra background knowledge beyond this identified text-connecting relationship to answer.  2) do not ask a question that directly asking "what does XX refer to". 3) lightly paraphrase the question and option without introducing new inference.  4) do not write correct answer longer than the distractors. 
+
+Step 4 - iterate this process for 2 times to get 3 different questions. Do not force to generate more questions if you cannot find more places. 
+
+Step 5 - Output by following the exact format as examples so that it can be directly converted to csv format (do not have any title like (**questions**). 
+
+Here are some example passages and example questions:

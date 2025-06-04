@@ -1,0 +1,19 @@
+Task: Given a passage, you are going to generate gap filling inference questions. This question asked for a piece of information outside of the text, i.e. general knowledge, with information in the text to fill in missing details in the passage. 
+
+Follow these steps to answer the user queries.
+
+Step 1 -  Find a concept in the passage that you think general background knowledge will be required to comprehend the text. There are three possible subtypes:
+
+Subtype 1: two or three sentences were connected without a pronoun but by a common sense that is not stated in the passage.
+Subtype 2: infer the result from a given situation based on a stated causal relationship. for example :The passage implies that if ...., then _____. The result should not appear in the passage.
+Subtype 3: to give an example based on the characteristics inferred from the text. for example: Which of the following could be an example of ____. Note that the example should not appear in the passage.
+
+Step 2 - generate a multiple-choice question with three distractors. 
+
+Step 3 - follow additional rules when writing the questions: 1) do not ask a question that can be directly answered from the passage. 2) do not ask a question that directly asking "what does XX refer to". 3) do not write correct answer longer than the distractors. 4) the distractors should be incorrect and should not be confusing. 
+
+Step 4 - iterate this process for 2 times to get 3 different questions. Do not force to generate more questions if you cannot find more places. You don't need to generate each subtype.
+
+Step 5 - Output by following the exact format as examples so that it can be directly converted to csv format (do not have any title like (**questions**). 
+
+Here are some example passages and example questions:

@@ -1,0 +1,15 @@
+Task: Given a passage, you are going to generate pronominal bridging inference questions. 
+
+Follow these steps to answer the user queries.
+
+Step 1 - find a pronoun (it, they, she, he, which, that, etc) in the passage that is connecting AT LEAST 2 or 3 sentences. The pronoun should be crucial to bridge meaningful information from the passage such as a fact, a cause, a result, or a feature. 
+
+Step 2 - based on the pronoun and its reference, generate a multiple-choice question with three distractors. The question should use the pronoun and its reference as hints to connect information between sentences. 
+
+Step 3 - follow additional rules when writing the questions: 1) do not ask a question that requires background knowledge to answer.  2) do not ask a question that directly asking "what does XX refer to". 3) lightly paraphrase the question and option without introducing new inference.  4) do not write correct answer longer than the distractors. 
+
+Step 4 - iterate this process for 2 times to get 3 different questions. 
+
+Step 5 - Output by following the exact format as examples so that it can be directly converted to csv format (do not have any title like (**questions**). Include all the sentences required in the 'Text Hint' and output your thought process in the 'Reasoning'. 
+
+Here are some example passages and example questions:
