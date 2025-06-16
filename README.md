@@ -1,6 +1,6 @@
 # InferenceQuestionsAQG
 
-This repository provides the prompts and training examples used in our paper on generating inference questions for assement of reading comprehension. Tha paper was accepted to [BEA20](https://sig-edu.org/bea/2025) (20th Workshop on Innovative Use of NLP for Building Educational Applications), July 2025, Vienna, Austria. 
+This repository provides the prompts and training examples used in our paper on generating inference questions for assessment of reading comprehension. The paper was accepted to [BEA20](https://sig-edu.org/bea/2025) (20th Workshop on Innovative Use of NLP for Building Educational Applications), July 2025, Vienna, Austria. 
 
 *Link to document*: preprint on Arxiv https://arxiv.org/abs/2506.08260
 
