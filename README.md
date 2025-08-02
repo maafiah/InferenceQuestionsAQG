@@ -6,6 +6,7 @@ This repository provides the prompts and training examples used in our paper on 
 
 *Author*s: Wanjing Anya Ma, Michael Flor, Zuowei Wang
 
-*Preprint* on Arxiv: https://arxiv.org/abs/2506.08260
+*Preprint* on Arxiv: https://arxiv.org/abs/2506.08260   
+
 *Published* in ACL anthology: https://aclanthology.org/2025.bea-1.31/
 
